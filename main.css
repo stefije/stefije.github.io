@@ -1,3 +1,45 @@
 body {
   text-align: center;
 }
+
+.jwb-button, .jwb-button:hover{
+                /* style="" Shortcuts: */
+                --c: #FAFAFE; /* --c: Border Color // Default */
+                --b: rgba(5,5,10,0.9); /* --b: Background Color // Default */
+                --t: #FAFAFE; /* --t: Text Color // Default */
+                --ht: var(--b); /* --ht: Highlighted Text Color // Inherit Background*/
+                --hb: var(--c); /* --hb: Highlighted Background Color // Inherit Border */
+                --hc: var(--c); /* --hc: Highlighted Border Color // Inherit Border */
+                --m: auto; /* --m: Margin // Default */
+                --p: 2%; /* --p: Padding Left/Right // Default */
+                --s: 2%; /* --s: Margin Top/Bottom // Default */
+                --st: var(--s); /* --st: Margin Top // Inherit Margin Top/Bottom */
+                --sb: var(--s); /* --sb: Margin Bottom // Inherit Margin Top/Bottom */
+
+                width: fit-content;
+                margin: var(--m);
+                margin-top: var(--st);
+                margin-bottom: var(--sb);
+                padding-left: var(--p);
+                padding-right: var(--p);
+                text-align: center;
+
+                border-style: solid;
+                border-width: medium;
+                border-color: var(--c);
+                border-radius: 5px;
+                background-color: var(--b);
+                color: var(--t);
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+}
+.jwb-button:hover{
+                border-color: var(--hc);
+                background-color: var(--hb);
+                color: var(--ht);
+                text-decoration: underline;
+}
+.jwb-button a{
+                color: inherit;
+                text-decoration: inherit;
+}
